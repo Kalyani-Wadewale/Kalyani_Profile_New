@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Kalyani Wadewale</title>
+    <link rel="icon" href="favicon.ico/favicon.png">
+
+<style>
+    body{
+        background: #161618;
+    }
+    #head{
+        background: #000;
+        /* margin-bottom: 4%; */
+        /* position: fixed;
+        width: 100%;
+        z-index: 20; */
+        /* margin-top: 5%; */
+        border-bottom: 2px solid grey;
+    }
+#navigation a{
+ color: rgb(240, 232, 232);
+}
+
+/* .navbar-collapse{
+    flex-grow: 2;
+} */
+.navbar-toggler{
+    color: rgb(240, 235, 235);
+}
+.container-fluid{
+    padding: 0px;
+}
+.navbar-brand {
+    padding-left: 2%;
+    display: inline-block;
+}
+.navbar-brand span{
+   font-size: 35px;
+   font-family: 'Merriweather', serif;
+   margin-left: 5%;
+}
+.navbar-brand img{
+    vertical-align: bottom;
+    margin-bottom: 4%;
+}
+#imgandinfo{
+    z-index: 10;
+    margin-top: 4%;
+    /* background: #000; */
+    
+}
+#myintro h2{
+ color: #fff;
+ margin-bottom: 5%;
+ font-size: 35px;
+ font-family: 'Merriweather', serif;
+ animation: typing 4s infinite steps(26);
+ animation-delay: 1s;
+ overflow: hidden;
+ white-space: nowrap;
+ width: 26ch; 
+ /* border-right: 3px solid white; */
+
+}
+
+@keyframes typing {
+    0% {
+        width:0ch;
+    }
+    100%{
+    width: 26ch;
+    
+}
+}
+#myintro p{
+    font-size: 19px;
+    font-size: sans-serif;
+    color:rgb(129 122 122);
+}
+#myintro span{
+    position: relative;
+    font-family: 'Cookie', cursive;
+    color: rgb(129 122 122);
+    font-weight: italic;
+}
+#Aboutme {
+    margin-top: 6%;
+}
+#skillandexp{
+    margin-top: 6%;
+}
+#Aboutme h1{
+     font-size: 40px;
+     font-weight: bold;
+     color: rgb(8, 228, 198);
+}
+#Aboutme p{
+    color:rgb(129 122 122);
+    font-size:19px;
+    margin-top: 5%;
+}
+#Aboutme a{
+    color: rgb(8, 228, 198);
+    text-decoration: none;
+}
+#skillandexp h1{
+    font-size: 40px;
+     font-weight: bold;
+     color: rgb(8, 228, 198);
+}
+#skillandexp p{
+    color:rgb(129 122 122);
+    font-size:19px;
+    margin-top: 5%;
+}
+
+#project{
+    margin-top: 6%;
+}
+#project h1{
+    font-size: 40px;
+     font-weight: bold;
+     color: rgb(8, 228, 198);
+    }
+
+#project p{
+    color:rgb(129 122 122);
+    font-size:19px;
+    margin-top: 5%;
+
+}
+#education{
+    margin-top: 6%;
+
+}
+#education h1{
+    font-size: 40px;
+     font-weight: bold;
+     color: rgb(8, 228, 198);
+}
+#education span{
+    color:rgb(129 122 122);
+    font-size:19px;
+}
+#portfolio{
+    margin-top: 6%;
+}
+#portfolio h1{
+    font-size: 40px;
+     font-weight: bold;
+     color: rgb(8, 228, 198);
+}
+#portfolio p{
+    color:rgb(129 122 122);
+    font-size:19px;
+    margin-top: 5%;
+}
+#contactme{
+    margin-top: 6%;
+}
+
+#contactme h1{
+    font-size: 40px;
+     font-weight: bold;
+     color: rgb(8, 228, 198);
+}
+
+.control-label{
+    color: #b3a8a8;
+}
+#contactme input {
+    background-color: #161618;
+}
+#contactme textarea {
+    background-color: #161618;
+}
+
+#contactme button{
+    /* background-color: #08e4c6; */
+    margin-top: 3%;
+    border: none;
+    padding: 10px;
+    width: 100px;
+    font-family: "montserrat", sans-serif;
+    cursor: pointer;
+    color: #fff;
+    background-size: 200% ;
+    background-image: linear-gradient(to left,#12CBC4,#0652DD,#12CBC4);
+    transition: 0.6s;
+}
+#contactme button:hover{
+    background-position: right;
+}
+#contactme p{
+    color:rgb(129 122 122);
+    font-size:19px;
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+.progress{
+    height: 6px;
+}
+#skillprogress label{
+    color: rgb(172, 169, 169);
+    margin-top: 8%;
+}
+#DownloadCV a{
+    /* color: white; */
+    text-decoration: none;
+    /* background-color: red; */
+    border-radius: 6px;
+    margin-top: 8%;
+    margin-left:13%;
+    position: absolute;
+    border: none;
+    padding: 15px;
+    width: 191px;
+    font-family: "montserrat", sans-serif;
+    cursor: pointer;
+    color: #fff;
+    background-size: 200% ;
+    background-image: linear-gradient(to left,#12CBC4,#0652DD,#12CBC4);
+    transition: 0.6s;
+}
+#DownloadCV a:hover{
+    background-position: right;
+}
+#DownloadCV p{
+    font-size: 25px;
+    color: rgb(235, 249, 217);
+    font-weight: bold;
+    position: absolute;
+    margin-top: 3%;
+    margin-left:6%;
+} 
+#myproject a{
+    color: #08e4c6;
+    font-weight: bold;
+    text-decoration: none;
+}
+#myproject p{
+    color: #08e4c6;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 0px;
+}
+#myproject img{
+    border: 2px solid grey;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+#aboutmeanimatn ul{
+    margin-top: 40%;
+    display:flex;
+}
+#aboutmeanimatn ul li{
+    list-style: none;
+    width: 100px;
+    font-size: 30px;
+    /* background: rgb(190, 56, 56); */
+    padding: 20px;
+    margin-left: 5%;
+    color: rgb(17, 230, 205);
+    animation: bouncy 1s linear infinite;
+    text-shadow: 0 0 10px rgb(17, 230, 205),
+    0 0 20px rgb(17, 230, 205),
+    0 0 40px rgb(17, 230, 205),
+    0 0 80px rgb(17, 230, 205),
+    0 0 120px rgb(17, 230, 205),
+    0 0 200px rgb(17, 230, 205),
+    0 0 300px rgb(17, 230, 205),
+    0 0 400px rgb(17, 230, 205);
+    
+
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,rgb(0, 0, 0)); */
+}
+@keyframes bouncy
+{
+    0%{
+        transform: translateY(0);
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        transform: translateY(-170px);
+        filter: hue-rotate(360deg);
+    }
+    100%{
+        transform: translateY(0);
+        filter: hue-rotate(0deg);
+    }
+}
+
+#aboutmeanimatn ul li:nth-child(1){
+ animation-delay: 0.4s;
+}
+#aboutmeanimatn ul li:nth-child(2){
+ animation-delay: 0.6s;
+}
+#aboutmeanimatn ul li:nth-child(3){
+ animation-delay: 0.8s;
+}
+#aboutmeanimatn ul li:nth-child(4){
+ animation-delay: 0.9s;
+}
+#social h1{
+    font-size: 40px;
+     font-weight: bold;
+     color: rgb(8, 228, 198);
+     margin-top: 6%;
+}
+#sociallinks{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+#sociallinks img{
+    margin-right: 2%;
+    border-radius: 5px;
+}
+.certificate{
+    margin-top: 10%;
+}
+.certificate h2{
+    color: rgb(223, 219, 219);
+    text-align: center;
+    margin-bottom: 10%;
+}
+.certificate p{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 18px;
+    color:#91c3d2;
+}
+.certificate a{
+    text-decoration: none;
+    margin-bottom: 10%;
+    position: relative;
+    margin-left: 38%;
+    border-radius: 6px;
+    border: none;
+    padding: 9px;
+    width: 191px;
+    font-family: "montserrat", sans-serif;
+    cursor: pointer;
+    color: #fff;
+    background-size: 200% ;
+    background-image: linear-gradient(to left,#12CBC4,#0652DD,#12CBC4);
+    transition: 0.6s;
+}
+.certificate a:hover{
+    background-position: right;
+}
+#myproject img:hover{
+    transform: scale(1.1);
+}
+#skillandexp a{
+    text-decoration: none;
+    color: #08e4c6;
+}
+#project span{
+    color: #2a9b8c;
+}
+#logo img{
+    width: 203px;
+     height: 100px;
+     margin-left: 43%;
+}
+#myimg img{
+    margin-left: 15%;
+    border: 2px solid grey;
+    border-radius: 4px;
+}
+#Quote p{
+    font-family: 'Pacifico', cursive;
+    color:#91c3d2;
+    font-size: 24px;
+    margin-top: 5%;
+    border: 2px solid grey;
+    border-radius: 4px;
+    width: 73%;
+    padding: 24px;
+    margin-left: 15%;
+}
+section{
+    position: relative;
+    width: 100%;
+    margin-top: 4%;
+    /* height: 20vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: changecolor 5s linear infinite;
+}
+@keyframes changecolor{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+section .loader{
+    position: relative;
+    display:flex;
+}
+section .loader .dot{
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: rgb(12, 231, 12);
+    box-shadow: 0 0 10px rgb(12, 231, 12),
+                0 0 20px rgb(12, 231, 12),
+                0 0 40px rgb(12, 231, 12),
+                0 0 60px rgb(12, 231, 12),
+                0 0 80px rgb(12, 231, 12),
+                0 0 100px rgb(12, 231, 12);
+    margin: 20px 10px;
+    transform: scale(0.1);
+    border-radius: 50%;
+    animation: animationdot 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animationdot{
+    0%{
+        transform: scale(0.1);
+    }
+    10%{
+        transform: scale(1);
+    }
+    50%,100%{
+        transform: scale(0.1);
+    }
+}
+</style>
+</head>
+<body>
+    <div class="container-fluid" id="head">
+        <nav class="navbar  navbar-expand-lg navbar-dark " id="navigation"> 
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <a class="navbar-brand" href="#"> <img src="Images/kw logo_crop_final.png" width="65px" height="30px" alt="KalyaniWadewale"> <span> Kalyani Wadewale</span></a>
+              <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+                <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
+                  <li class="nav-item pe-4 ">
+                    <a class="nav-link" aria-current="page" href="#Aboutme">About Me</a>
+                  </li>
+                  <li class="nav-item pe-4">
+                    <a class="nav-link" href="#skillandexp">Experience</a>
+                  </li>
+                  <li class="nav-item pe-4">
+                    <a class="nav-link" href="#education">Education</a>
+                  </li>
+                  <li class="nav-item pe-4">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item pe-4">
+                    <a class="nav-link" href="#project">Project Work</a>
+                  </li>
+                  <li class="nav-item pe-4">
+                    <a class="nav-link" href="#contactme">Contact Me</a>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </div>  
+    <!-- <br>
+    <br>
+    <br> -->
+    <div class="container" id="imgandinfo">
+        
+            <div class="row">
+                <div class="col-md-12" width="100%" height="10%" style="background: #000;">
+                    <!-- <hr>
+                    <hr> -->
+                </div>
+            </div>
+            <div class="row">
+                 <!-- <div class="col-2" style="border: 2px solid hotpink;">
+                    1 of 3
+                  </div> -->
+                  <div class="col-sm-5" id="myimg" >
+                    <img class="img-fluid" src="Images/20210730080114_IMG_8840-01.PNG" width="370px"/>
+                  </div>
+                  <div class="col-sm-5" id="myintro" style=" margin-left: 8%;">
+                    <h2>Hi, Welcome to my Website!</h2>
+                    <p> I am a full stack web developer, have 3+ years of experience.I've always been someone who has both  creative and logical side. I have a wide range of skills that include back-end development using open source technologies (NodeJs, PHP), design (working closely with designers), front-end development (AngularJs, Angular2, ReactJs, HTML5, CSS3, Javascript, Responsive, UX), Server Administrator(AWS, IBM, Azure),database(MongoDB, MSSQL,cassendra,Mysql).
+                        </p>
+                        <!-- <span>Kalyani Wadewale</span> -->
+                  </div>
+                  <!-- <div class="col-2" style="border: 2px solid rgb(224, 38, 54);">
+                    1 of 3
+                  </div> -->
+            </div>
+
+        
+    </div>
+ <br>
+ <br>
+
+ <div class="container" id="Quote">
+     <div class="row text-center">
+         <p>"There's no way around doing the work it takes to get you there."</p>
+     </div>
+ </div>
+
+    <div class="container" id="Aboutme">
+        <div class="row">
+            <div class="col-md-5" style="">
+                <h1>My, Myself & I</h1>
+
+                <p>I'm a full stack web developer located in pune, Maharashtra. I have serious passion for UX effect, animations and creating intuitive, dynamic user experience.
+                </p>   
+                <p>Well-organized person, problem solver, independent employee with attention to detail. Fan of cooking, traveling, outdoor activities,OTT series and English Literatures.</p>
+                <p>Interested in entire full stack spectrum and working on ambitious project and positive people.</p>
+                
+                    <a href="#contactme"> Let’s make something special.</a>
+            </div>
+            <div class="col-md-5" id="aboutmeanimatn" style="margin-left: 8%;">
+                  <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JS</li>
+                      <li>MERN</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+ <br>
+ <br>
+
+ <section>
+     <div class="loader">
+         <div class="dot" style="--i:0;"></div>
+         <div class="dot" style="--i:1;"></div>
+         <div class="dot" style="--i:2;"></div>
+         <div class="dot" style="--i:3;"></div>
+         <div class="dot" style="--i:4;"></div>
+         <div class="dot" style="--i:5;"></div>
+         <div class="dot" style="--i:6;"></div>
+         <div class="dot" style="--i:7;"></div>
+         <div class="dot" style="--i:8;"></div>
+         <div class="dot" style="--i:9;"></div>
+     </div>
+ </section>
+
+
+    <div class="container" id="skillandexp" >
+        <div class="row" style="border: 2px solid grey;">
+            <div class="col-md-5" style="">
+                <h1>Skills & Experience</h1>
+                <p>Since the beginning of my career, I have worked as SQL server datadase administrator in Tata Consultancy services Ltd. I have acheived proficiency in sql server 2008/2012/2017/2019, SSRS, SSAS, SSIS, Log shipping, backup and recovery, upgradation and many more during working in Norway's biggest finance sector "DNB ASA Bank".
+                </p> 
+                <p>After that, I switched my career to  web development nearly a 2 years ago and started  developing successful responsive websites that are fast, easy to use and with best practices. The main area of my interest is front-end development, HTML, CSS, React JS , building small web apps, animations and coding interactive layouts.
+                </p>
+                <p>
+                    vist my <a href="#contactme">LinkedIn</a> profiles or just <a href="#contactme">Contact me</a> for more details.
+                </p>
+            </div>
+
+            <div class="col-md-5"  id="skillprogress" style="margin-left: 8%;">
+                <label>Front-end</label>
+                    <div class="progress">
+                    
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                  </div>
+                  <label>Back-end</label>
+                  <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <label>React JS</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                  </div>
+                  <label>Express JS</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                  </div>
+                  <label>Node JS</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                  </div>
+                  <label>Database</label>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                        </div>
+                  </div>
+            </div>
+
+        </div>
+    </div>
+<br>
+<br>
+<section>
+    <div class="loader">
+        <div class="dot" style="--i:0;"></div>
+        <div class="dot" style="--i:1;"></div>
+        <div class="dot" style="--i:2;"></div>
+        <div class="dot" style="--i:3;"></div>
+        <div class="dot" style="--i:4;"></div>
+        <div class="dot" style="--i:5;"></div>
+        <div class="dot" style="--i:6;"></div>
+        <div class="dot" style="--i:7;"></div>
+        <div class="dot" style="--i:8;"></div>
+        <div class="dot" style="--i:9;"></div>
+    </div>
+</section>
+    <div class="container" id="project">
+        <div class="row">
+            <div class="col-md-5" style="">
+                <h1>Project-I worked on</h1>
+                <p> <span>Zomato-Clone</span>  : Zomato is a restaurant discovery website,it provides not only   information related to nearby restaurants but also provides facilities such as online ordering, table reservations and management. 
+
+                </p> 
+                <p>
+                    <span>Ola-Clone</span>  : Ola is India’s largest mobility platform, it offers mobility solutions by connecting customers to drivers and a wide range of vehicles across bikes, auto-rickshaws, metered taxis, and cabs, enabling convenience and transparency for  consumers and driver-partners.  
+                </p>
+            </div>
+            <div class="col-md-5"  id="myproject" style="margin-left: 8%;">
+                <a href="https://kalyani-wadewale.github.io/listingpage_zomato/" target="_blank">
+                    <img class="mx-5" src="Images/zpmato_ss.PNG" width="400px" height="160px" alt="Zomato">
+                    <p class="text-center">Zomato</p>
+               </a>
+
+               <a href="https://kalyani-wadewale.github.io/OLA_Clone/" target="_blank">
+                <img class="mx-5" src="Images/ola_ss.PNG" width="400px" height="160px" alt="ola">
+                <p class="text-center">Ola Cabs</p>
+           </a>
+            </div>
+        </div>
+
+    </div>
+<br>
+<br>
+<section>
+    <div class="loader">
+        <div class="dot" style="--i:0;"></div>
+        <div class="dot" style="--i:1;"></div>
+        <div class="dot" style="--i:2;"></div>
+        <div class="dot" style="--i:3;"></div>
+        <div class="dot" style="--i:4;"></div>
+        <div class="dot" style="--i:5;"></div>
+        <div class="dot" style="--i:6;"></div>
+        <div class="dot" style="--i:7;"></div>
+        <div class="dot" style="--i:8;"></div>
+        <div class="dot" style="--i:9;"></div>
+    </div>
+</section>
+    <div class="container" id="education">
+        <div class="row">
+            <div class="col-md-5" style="">
+                <h1>Education</h1>
+                 <span style="Font-size:20px; color:rgb(220, 215, 215);">Bachelor of Engineering | Electronics & Telecommunication</span> <br>
+                 <span>Course duration: 2015-2019</span> <br>
+                 <span>University: Sant Gadge Baba Amravati University</span> <br>
+                 <span>Institute: Prof. Ram Meghe Institute of Technology & Research, Badnera. </span> <br>
+                 <span>Aggregate: 78%</span> <br>
+                <br>
+                <br>
+
+                <span style="Font-size:20px; color:rgb(220, 215, 215);">HSC | Computer Science</span> <br>
+                <span>Course Duration: 2014-2015</span> <br>
+                <span>Board: Amravati Board</span> <br>
+                <span>Institute: Dawale Jr College, Akola.</span> <br>
+                <span>Percentage: 79%</span> <br>
+                <br>
+                <br>
+                <span style="Font-size:20px; color:rgb(220, 215, 215);">SSC </span> <br>
+                <span>Course Duration: 2012-2013</span> <br>
+                <span>Board: Amravati Board</span> <br>
+                <span>Institute: Mutizapur Highschool,Mutizapur.</span> <br>
+                <span>Percentage: 90%</span> <br>
+                
+            </div>
+            <div class="col-md-5" style="margin-left: 8%;">
+                <div class="certificate">
+                    <h2>Certification</h2>
+                    <p>Web Development Bootcamp</p>
+                    <a href="kalyani resume.pdf" target="_blank"> View Certificate</a>
+                    <p>Web Development Bootcamp</p>
+                    <a href="kalyani resume.pdf" target="_blank"> View Certificate</a>
+                    <p>Web Development Bootcamp</p>
+                    <a href="kalyani resume.pdf" target="_blank"> View Certificate</a>
+                    <p>Web Development Bootcamp</p>
+                    <a href="kalyani resume.pdf" target="_blank"> View Certificate</a>
+              </div>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<section>
+    <div class="loader">
+        <div class="dot" style="--i:0;"></div>
+        <div class="dot" style="--i:1;"></div>
+        <div class="dot" style="--i:2;"></div>
+        <div class="dot" style="--i:3;"></div>
+        <div class="dot" style="--i:4;"></div>
+        <div class="dot" style="--i:5;"></div>
+        <div class="dot" style="--i:6;"></div>
+        <div class="dot" style="--i:7;"></div>
+        <div class="dot" style="--i:8;"></div>
+        <div class="dot" style="--i:9;"></div>
+    </div>
+</section>
+    <div class="container" id="portfolio">
+        <div class="row">
+            <div class="col-md-5" style="">
+                <h1>Portfolio</h1>
+                <p>I am extremely proficient in Front-End Development using HTML5, Cascade Style Sheets (CSS3), Bootstrap, Advance Javascript, React.Js & Vue.Js And apart from Front-End, I have good knowledge in Back-End using PHP & MySQL as well as in designing using Adobe Photoshop, Adobe Illustrator, Adobe XD, Sketch & Figma, and continuously engage in trying to extend my skills with new technology.</p>
+            </div>
+            <div class="col-md-5" id="DownloadCV" style="margin-left: 8%;">
+                
+                    <p>You can find more info about me:</p>
+                    <a href="kalyani resume.pdf" target="_blank"> Download ResumeA</a></div>
+                
+                
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<section>
+    <div class="loader">
+        <div class="dot" style="--i:0;"></div>
+        <div class="dot" style="--i:1;"></div>
+        <div class="dot" style="--i:2;"></div>
+        <div class="dot" style="--i:3;"></div>
+        <div class="dot" style="--i:4;"></div>
+        <div class="dot" style="--i:5;"></div>
+        <div class="dot" style="--i:6;"></div>
+        <div class="dot" style="--i:7;"></div>
+        <div class="dot" style="--i:8;"></div>
+        <div class="dot" style="--i:9;"></div>
+    </div>
+</section>
+    <div class="container" id="contactme">
+        <div class="row" >
+            <div class="col-sm-5" style="">
+                <h1>Contact Me</h1>
+                <p> Thanks for reaching out! I am looking forward to connect with you.</p>
+                <form method="POST" action="http://localhost:7800/employee">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <div class="form-group">
+                                <label for="fname"  class="control-label">FirstName</label>
+                                <input id="fname" class="form-control" name="fname" 
+                                placeholder="Firstname" required/>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <div class="form-group ">
+                                 <label for="lname" class="control-label">LastName</label>
+                                 <input id="lname" placeholder="Lastname" class="form-control" name="lname" required />
+                             </div>
+                        </div>
+                   </div>
+                   <br>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group ">
+                                <label for="email" class="control-label">Email</label>
+                                <input id="email" class="form-control" name="email"
+                                placeholder="a@a.com" type="email"/>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="form-group ">
+                                <label for="Subject" class="control-label">Subject</label>
+                                <input id="Subject" class="form-control" name="subject" placeholder="Subject"
+                                type="password" minlength="8"/>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <label for="comment" style="color: #b3a8a8;">Message</label>
+                                <textarea class="form-control" name="comment" id="comment"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">Submit</button>
+                
+                        </div>
+                    </div>
+                   
+                    </form>
+            </div>
+            <div class="col-sm-5" style="margin-left: 8%;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30252.75356820924!2d73.69402441517448!3d18.592325191489337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bba396c49b13%3A0x7c61fb96560cb10f!2sHinjewadi%20Rajiv%20Gandhi%20Infotech%20Park%2C%20Hinjawadi%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1648819979357!5m2!1sen!2sin" width="600" height="450" style="color: red;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>  
+        
+    </div>
+
+<br>
+<br>
+<div class="container" id="social">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="text-center">Follow Me</h1>
+            <div class="text-center" id="sociallinks">
+            <a href="https://github.com/Kalyani-Wadewale" target="_blank" > <img src="Images/github_black.jfif" width="30px" height="30px" alt="Github"></a>
+            <a href="https://stackoverflow.com/users/18254218/kalyani-a-wadewale"  target="_blank"><img src="Images/stackoverflow_black.jfif"  width="30px" height="30px" alt="Stackoverflow"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="Images/link_black.jfif"  width="30px" height="30px" alt="Linkedin"></a>
+         </div>
+        </div>
+    </div>
+</div>
+
+    <div class="conatiner" id="logo">
+        <div class="row">
+            <img src="Images/kw logo_crop_final.png" alt="kalyani_wadewale">
+        </div>
+    </div>
+</body>
+</html>
